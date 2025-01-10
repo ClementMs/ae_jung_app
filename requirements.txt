@@ -1,0 +1,4 @@
+streamlit
+streamlit[snowflake]
+pandas
+numpy
