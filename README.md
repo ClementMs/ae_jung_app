@@ -1,1 +1,1 @@
-Prototype for Ae Jung restaurant
+Ae Jung Prototype website with Netlify
