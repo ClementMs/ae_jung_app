@@ -1,6 +1,7 @@
 streamlit
 pandas
 numpy
+snowflake
 snowflake-snowpark-python
 snowflake-connector-python
 stlite
