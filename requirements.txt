@@ -2,6 +2,6 @@ streamlit
 pandas
 numpy
 #snowflake
-snowflake-snowpark-python
+snowflake-snowpark-python==1.26.0
 snowflake-connector-python
-stlite
+#stlite==0.76.0
