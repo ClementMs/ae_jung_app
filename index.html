@@ -13,8 +13,15 @@
     <div id="root"></div>
     <script type="module">
       import { mount } from "https://cdn.jsdelivr.net/npm/@stlite/browser@0.76.0/build/stlite.js";
-      mount(
-        `
+
+
+mount(
+  {
+    requirements: ["snowflake"], // Packages to install
+    entrypoint: "app.py", // The target file of the `streamlit run` command
+    files: {
+      "app.py": `
+
 
 import streamlit as st
 import pandas as pd
@@ -62,9 +69,17 @@ for row in df.itertuples():
     st.write(f"{row.MENU_ITEM_NAME} 's price :{row.COST_OF_GOODS_USD}:")
 
 
+
+
 `,
-        document.getElementById("root"),
-      );
+    },
+    streamlitConfig: {
+      // Streamlit configuration
+      "client.toolbarMode": "viewer",
+    },
+  },
+  document.getElementById("root"),
+);
     </script>
   </body>
 </html>
