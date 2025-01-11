@@ -16,18 +16,13 @@
 
 
 mount(
-  {
-    requirements: ["matplotlib"], // Packages to install
-    entrypoint: "app.py", // The target file of the `streamlit run` command
-     files: {
-      "app.py": `
-
+        `
 import streamlit as st
 
-st.write("""
-# Welcome to Ae Jung restaurant !
-""")
 
+st.write(""" 
+Welcome to Ae Jung restaurant !
+""")
 
 `,
     },
